@@ -27,3 +27,16 @@
 3.3. Configuring hr-worker and actives profiles  
 3.4. Private Git Repository  
 3.5. Actuator  
+
+## Part 4: Authentication and Authorization
+4.1. Implementation hr-user project  
+4.2. Configure hr-user project  
+4.3. Entities: User, Role e association N-N  
+4.4. UserRepository, UserController, Zuul config   
+4.5. Implementation hr-oath project  
+4.6. Configure hr-oath project  
+4.7. UserFeignClient  
+4.8. Login and Token JWT  
+4.9. Feature authorization through Zuul gateway  
+4.10. Security configuration for the configuration server  
+4.11. Configure CORS
