@@ -27,30 +27,3 @@
 3.3. Configuring hr-worker and actives profiles  
 3.4. Private Git Repository  
 3.5. Actuator  
-
-
-## Part 4: Authorization and Authentication  
-
-4.1. Implementation projeto hr-user project  
-4.2. Configuring hr-user project  
-4.3. Entity creation: User, Role e associação N-N  
-4.4. UserRepository, UserResource, Zuul config  
-4.6. Implementation hr-oauth project  
-4.7. Configuring hr-oauth project
-4.8. UserFeignClient  
-4.9. Login and Token JWT  
-4.10. Feature authorization through Zuul gateway  
-4.12 Security configuration configuration server  
-4.13 Configuring CORS  
-
-## Part 5: Docker
-
-5.1. *CRIANDO UMA REDE*  
-5.2. hr-config-server container  
-5.3. hr-eureka-server container  
-5.4. hr-worker container  
-5.5. hr-user container  
-5.6. hr-payroll container  
-5.3. hr-oath container  
-5.3. hr-api-gateway-zuul container  
-
