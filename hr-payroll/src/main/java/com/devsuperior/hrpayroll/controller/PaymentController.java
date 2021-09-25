@@ -15,19 +15,19 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 @RequestMapping(value = "/payments")
 public class PaymentController {
 
-	@Autowired
-	private PaymentService paymentService;
+    @Autowired
+    private PaymentService paymentService;
 
 
-	@HystrixCommand(fallbackMethod = "getPaymentAlternative")
-	@GetMapping(value="/{workerId}/days/{days}")
-	public ResponseEntity<Payment> getPaymente(@PathVariable long workerId, @PathVariable Integer days) {
-		Payment payment = paymentService.getPayment(workerId, days);
-		return ResponseEntity.ok(payment);
-	}
+    @HystrixCommand(fallbackMethod = "getPaymentAlternative")
+    @GetMapping(value="/{workerId}/days/{days}")
+    public ResponseEntity<Payment> getPaymente(@PathVariable long workerId, @PathVariable Integer days) {
+        Payment payment = paymentService.getPayment(workerId, days);
+        return ResponseEntity.ok(payment);
+    }
 
-	public ResponseEntity<Payment> getPaymentAlternative(long workerId, Integer days) {
-		Payment payment = new Payment("Brann", 400.0, days);
-		return ResponseEntity.ok(payment);
-	}
+    public ResponseEntity<Payment> getPaymentAlternative(long workerId, Integer days) {
+        Payment payment = new Payment("Brann", 400.0, days);
+        return ResponseEntity.ok(payment);
+    }
 }

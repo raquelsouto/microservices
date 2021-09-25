@@ -11,8 +11,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    /*Configurar a autenticação(vai pegar os dados do usuário e comparar com o que foi enviado 
-     * e vê se bateu. Autentica o usuário e devolve o Token*/
+    /*Configurar a autenticação(vai pegar os dados do usuário e comparar com o que foi enviado.
+     * Autentica o usuário e devolve o Token)*/
     
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
